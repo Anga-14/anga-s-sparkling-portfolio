@@ -65,9 +65,23 @@ export const education = [
   },
 ];
 
-export const qualifications = [
+export type Qualification = {
+  title: string;
+  detail: string;
+  certificateUrl?: string; // optional link to certificate / credential
+};
+
+export const qualifications: Qualification[] = [
   { title: "Matric", detail: "National Senior Certificate." },
   { title: "Marketing Management N6", detail: "Northlink TVET College." },
-  { title: "Google Essentials Certificate", detail: "Foundations of digital marketing." },
-  { title: "Artificial Intelligence Bootcamp", detail: "Practical intro to applied AI tools." },
+  {
+    title: "Google Essentials Certificate",
+    detail: "Foundations of digital marketing.",
+    certificateUrl: "", // paste your Google Essentials certificate link here
+  },
+  {
+    title: "Artificial Intelligence Bootcamp",
+    detail: "Practical intro to applied AI tools.",
+    certificateUrl: "", // paste your AI Bootcamp certificate link here
+  },
 ];

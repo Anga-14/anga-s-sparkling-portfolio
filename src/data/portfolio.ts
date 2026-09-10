@@ -1,6 +1,6 @@
 // Edit this file to update your portfolio content and links.
 
-import photoAsset from "@/assets/anga-jonas.jpg.asset.json";
+import photoAsset from "@/assets/anga-jonas-professional.png.asset.json";
 
 export const profile = {
   name: "Anga Jonas",

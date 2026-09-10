@@ -14,7 +14,7 @@ export const profile = {
   // Profile photo (CDN asset).
   photo: photoAsset.url,
   // Drop your CV PDF in the public folder (e.g. public/anga-jonas-cv.pdf) and put "/anga-jonas-cv.pdf" here.
-  cvFile: "",
+  cvFile: "/anga-jonas-cv.pdf",
 };
 
 export type Project = {

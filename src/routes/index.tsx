@@ -5,6 +5,7 @@ import {
   skills,
   education,
   qualifications,
+  type Qualification,
 } from "@/data/portfolio";
 
 export const Route = createFileRoute("/")({

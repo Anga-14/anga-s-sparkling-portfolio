@@ -64,8 +64,10 @@
   --color-brand: var(--brand);
   --color-brand-2: var(--brand-2);
   --color-cream: var(--cream);
+  --color-surface: var(--surface);
   --color-ink: var(--ink);
   --color-mute: var(--mute);
+  --color-pink: var(--pink);
 }
 
 :root {

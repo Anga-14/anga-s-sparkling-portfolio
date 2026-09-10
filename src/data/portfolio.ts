@@ -10,7 +10,7 @@ export const profile = {
   phoneDisplay: "067 993 2081",
   personalEmail: "angajonas14@gmail.com",
   workEmail: "anga.jonas@capaciti.org.za",
-  githubProfile: "https://github.com/AngaJonas",
+  githubProfile: "https://github.com/angajonas14-cell",
   // Profile photo (CDN asset).
   photo: photoAsset.url,
   // Drop your CV PDF in the public folder (e.g. public/anga-jonas-cv.pdf) and put "/anga-jonas-cv.pdf" here.

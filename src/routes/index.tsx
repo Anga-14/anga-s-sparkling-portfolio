@@ -208,9 +208,21 @@ function Index() {
             <h3 className="mt-6 text-xs font-semibold uppercase tracking-[0.15em] text-brand">
               Qualifications
             </h3>
-            <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-ink">
+            <ul className="mt-2 list-disc space-y-2 pl-5 text-sm text-ink">
               {qualifications.map((q) => (
-                <li key={q.title}>{q.title}</li>
+                <li key={q.title}>
+                  {q.title}
+                  {q.certificateUrl && (
+                    <a
+                      href={q.certificateUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ml-2 inline-flex items-center gap-1 rounded-full bg-pink px-2 py-0.5 text-xs font-medium text-white hover:opacity-90"
+                    >
+                      🏆 View certificate
+                    </a>
+                  )}
+                </li>
               ))}
             </ul>
 
@@ -272,7 +284,19 @@ function Index() {
                 className="reveal lift rounded-[10px] bg-surface p-4 ring-1 ring-black/5"
                 style={{ animationDelay: `${0.08 + i * 0.06}s` }}
               >
-                <p className="text-base font-semibold text-ink">{q.title}</p>
+                <div className="flex flex-wrap items-start justify-between gap-2">
+                  <p className="text-base font-semibold text-ink">{q.title}</p>
+                  {q.certificateUrl && (
+                    <a
+                      href={q.certificateUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-pink text-xs"
+                    >
+                      🏆 View certificate
+                    </a>
+                  )}
+                </div>
                 <p className="mt-1 text-sm text-mute">{q.detail}</p>
               </div>
             ))}

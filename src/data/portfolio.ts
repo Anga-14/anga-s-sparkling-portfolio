@@ -82,6 +82,6 @@ export const qualifications: Qualification[] = [
   {
     title: "Artificial Intelligence Bootcamp",
     detail: "Practical intro to applied AI tools.",
-    certificateUrl: "", // paste your AI Bootcamp certificate link here
+    certificateUrl: "https://www.coursera.org/programs/mict-tvet-august-2026-0bkt0/my-learning?myLearningTab=IN_PROGRESS",
   },
 ];

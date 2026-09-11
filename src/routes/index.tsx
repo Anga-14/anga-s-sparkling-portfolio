@@ -350,18 +350,19 @@ function Index() {
       <section id="contact" className="bg-brand">
         <div className="mx-auto max-w-[62ch] px-6 py-14">
           <h2 className="reveal text-[1.85rem] font-semibold text-cream" style={{ ...serif, lineHeight: 1.1 }}>
-            Let&apos;s talk
+            💬 Let&apos;s talk
           </h2>
           <p className="reveal mt-2 text-cream/75">
             Based in {profile.location}. Reach me directly and I&apos;ll reply fast.
           </p>
+
           <div className="mt-6 space-y-3">
             <a
               href={`tel:${profile.phone}`}
               className="reveal lift flex items-center justify-between gap-3 rounded-[10px] bg-brand-2 px-4 py-3 ring-1 ring-cream/15"
             >
               <span>
-                <span className="block text-xs uppercase tracking-[0.15em] text-cream/60">Phone</span>
+                <span className="block text-xs uppercase tracking-[0.15em] text-cream/60">📞 Phone</span>
                 <span className="block text-base text-cream">{profile.phoneDisplay}</span>
               </span>
               <span className="text-xs text-cream/50">tap to call</span>
@@ -372,7 +373,7 @@ function Index() {
             >
               <span>
                 <span className="block text-xs uppercase tracking-[0.15em] text-cream/60">
-                  Personal email
+                  ✉️ Personal email
                 </span>
                 <span className="block text-base text-cream break-all">{profile.personalEmail}</span>
               </span>
@@ -383,10 +384,24 @@ function Index() {
               className="reveal lift flex items-center justify-between gap-3 rounded-[10px] bg-brand-2 px-4 py-3 ring-1 ring-cream/15"
             >
               <span>
-                <span className="block text-xs uppercase tracking-[0.15em] text-cream/60">Work email</span>
+                <span className="block text-xs uppercase tracking-[0.15em] text-cream/60">✉️ Work email</span>
                 <span className="block text-base text-cream break-all">{profile.workEmail}</span>
               </span>
               <span className="text-xs text-cream/50">tap to email</span>
+            </a>
+            <a
+              href={profile.linkedinProfile}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="reveal lift flex items-center justify-between gap-3 rounded-[10px] bg-pink px-4 py-3"
+            >
+              <span>
+                <span className="block text-xs uppercase tracking-[0.15em] text-white/80">LinkedIn</span>
+                <span className="block text-base font-semibold text-white">
+                  💼 View my LinkedIn profile
+                </span>
+              </span>
+              <span className="text-xs text-white/70">opens new tab</span>
             </a>
             <a
               href={profile.githubProfile}
@@ -402,6 +417,7 @@ function Index() {
               </span>
               <span className="text-xs text-white/70">opens new tab</span>
             </a>
+
           </div>
 
           <ContactForm />

@@ -129,8 +129,9 @@ function Index() {
             className="reveal mt-2 text-[1.75rem] font-semibold text-brand"
             style={{ ...serif, lineHeight: 1.1 }}
           >
-            Projects
+            🚀 Projects
           </h2>
+
           <p className="mt-2 text-sm text-mute">
             Each project opens in a new tab — the live app, or the code behind it.
           </p>
@@ -181,8 +182,9 @@ function Index() {
       <section className="bg-cream">
         <div className="mx-auto max-w-[62ch] px-6 pb-12">
           <h2 className="reveal text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
-            What I bring
+            ⭐ What I bring
           </h2>
+
           <div className="mt-6 grid grid-cols-1 gap-3">
             {skills.map((s, i) => (
               <div
@@ -202,8 +204,9 @@ function Index() {
       <section id="cv" className="bg-surface">
         <div className="mx-auto max-w-[62ch] px-6 py-12">
           <h2 className="reveal text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
-            Curriculum Vitae
+            📄 Curriculum Vitae
           </h2>
+
 
           <div className="mt-6 rounded-xl bg-cream p-5 ring-1 ring-black/5">
             <p className="text-lg font-semibold text-ink">{profile.name}</p>
@@ -215,8 +218,9 @@ function Index() {
             </p>
 
             <h3 className="mt-6 text-xs font-semibold uppercase tracking-[0.15em] text-brand">
-              Profile
+              👤 Profile
             </h3>
+
             <p className="mt-2 text-sm text-ink">
               I am a dedicated Marketing Intern / Practical Trainee with a Marketing Management N6
               qualification and practical experience in AI, digital communication and
@@ -227,8 +231,9 @@ function Index() {
 
 
             <h3 className="mt-6 text-xs font-semibold uppercase tracking-[0.15em] text-brand">
-              Education
+              🎓 Education
             </h3>
+
             <ul className="mt-2 space-y-2">
               {education.map((e) => (
                 <li key={e.school} className="text-sm">
@@ -239,8 +244,9 @@ function Index() {
             </ul>
 
             <h3 className="mt-6 text-xs font-semibold uppercase tracking-[0.15em] text-brand">
-              Qualifications
+              🏆 Qualifications
             </h3>
+
             <ul className="mt-2 list-disc space-y-2 pl-5 text-sm text-ink">
               {qualifications.map((q) => (
                 <li key={q.title}>
@@ -260,8 +266,9 @@ function Index() {
             </ul>
 
             <h3 className="mt-6 text-xs font-semibold uppercase tracking-[0.15em] text-brand">
-              Key skills
+              ⭐ Key skills
             </h3>
+
             <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-ink">
               {skills.map((s) => (
                 <li key={s.title}>{s.title}</li>
@@ -289,8 +296,9 @@ function Index() {
       <section className="bg-cream">
         <div className="mx-auto max-w-[62ch] px-6 py-12">
           <h2 className="reveal text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
-            Education
+            🎓 Education
           </h2>
+
           <ol className="mt-6 space-y-5 border-l border-brand/15 pl-5">
             {education.map((e, i) => (
               <li key={e.school} className="reveal relative" style={{ animationDelay: `${0.08 + i * 0.08}s` }}>
@@ -308,8 +316,9 @@ function Index() {
       <section className="bg-cream">
         <div className="mx-auto max-w-[62ch] px-6 pb-12">
           <h2 className="reveal text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
-            Qualifications
+            🏆 Qualifications
           </h2>
+
           <div className="mt-6 grid grid-cols-1 gap-3">
             {qualifications.map((q, i) => (
               <div

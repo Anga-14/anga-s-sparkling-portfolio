@@ -106,23 +106,39 @@ function Index() {
 
       {/* Projects */}
       <section id="projects" className="bg-cream">
-        <div className="mx-auto max-w-[62ch] px-6 py-12">
-          <h2 className="reveal text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
+        <div className="mx-auto max-w-[62ch] px-6 py-14">
+          <p className="reveal text-xs font-semibold uppercase tracking-[0.2em] text-pink">
+            Selected work
+          </p>
+          <h2
+            className="reveal mt-2 text-[1.75rem] font-semibold text-brand"
+            style={{ ...serif, lineHeight: 1.1 }}
+          >
             Projects
           </h2>
           <p className="mt-2 text-sm text-mute">
             Each project opens in a new tab — the live app, or the code behind it.
           </p>
-          <div className="mt-6 grid grid-cols-1 gap-4">
+          <div className="mt-7 grid grid-cols-1 gap-5">
             {projects.map((p, i) => (
               <article
                 key={p.title}
-                className="reveal lift rounded-xl bg-surface p-5 ring-1 ring-black/5"
+                className="reveal lift group relative overflow-hidden rounded-2xl bg-surface p-6 ring-1 ring-black/5"
                 style={{ animationDelay: `${0.08 + i * 0.06}s` }}
               >
-                <h3 className="text-lg font-semibold text-ink">{p.title}</h3>
-                <p className="mt-1 text-sm text-mute">{p.blurb}</p>
-                <div className="mt-4 flex flex-wrap gap-3">
+                <span className="absolute inset-x-0 top-0 h-1 bg-pink" />
+                <span
+                  className="pointer-events-none absolute -right-4 -top-3 select-none text-[5rem] font-bold leading-none text-brand/5"
+                  style={serif}
+                  aria-hidden="true"
+                >
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <h3 className="text-xl font-semibold text-ink" style={serif}>
+                  {p.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-mute">{p.blurb}</p>
+                <div className="mt-5 flex flex-wrap gap-3">
                   <a
                     href={p.liveUrl}
                     target="_blank"

@@ -58,16 +58,17 @@ function Index() {
               <img
                 src={profile.photo}
                 alt={`${profile.name}, ${profile.role}`}
-                className="size-20 shrink-0 rounded-full object-cover ring-2 ring-cream/30"
+                className="size-28 shrink-0 rounded-full object-cover ring-2 ring-cream/30"
               />
             ) : (
               <span
-                className="flex size-20 shrink-0 items-center justify-center rounded-full bg-brand-2 text-2xl font-semibold text-cream ring-2 ring-cream/20"
+                className="flex size-28 shrink-0 items-center justify-center rounded-full bg-brand-2 text-2xl font-semibold text-cream ring-2 ring-cream/20"
                 aria-label="Profile photo placeholder"
               >
                 AJ
               </span>
             )}
+
             <div>
               <h1
                 className="text-balance font-semibold text-cream"
@@ -82,9 +83,13 @@ function Index() {
           </div>
 
           <p className="reveal mt-5 text-cream/80" style={{ animationDelay: "0.1s" }}>
-            Based in {profile.location}. Marketing Management N6 with hands-on AI project
-            experience, looking for an internship or practical training placement.
+            I am a motivated Marketing Intern / Practical Trainee based in {profile.location}, with a
+            Marketing Management N6 qualification and hands-on experience across AI, digital
+            communication and customer-focused projects. I bring strong computer literacy, clear
+            communication and calm time management — and I am eager to contribute to a marketing
+            team while growing my practical skills.
           </p>
+
 
           <div className="reveal mt-7 flex flex-wrap gap-3" style={{ animationDelay: "0.18s" }}>
             <a href="#contact" className="btn-pink">
@@ -98,9 +103,18 @@ function Index() {
             >
               💻 View GitHub
             </a>
+            <a
+              href={profile.linkedinProfile}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline"
+            >
+              💼 View LinkedIn
+            </a>
             <a href="#cv" className="btn-outline">
               📄 View CV
             </a>
+
           </div>
         </div>
       </section>
@@ -115,8 +129,9 @@ function Index() {
             className="reveal mt-2 text-[1.75rem] font-semibold text-brand"
             style={{ ...serif, lineHeight: 1.1 }}
           >
-            Projects
+            🚀 Projects
           </h2>
+
           <p className="mt-2 text-sm text-mute">
             Each project opens in a new tab — the live app, or the code behind it.
           </p>
@@ -167,8 +182,9 @@ function Index() {
       <section className="bg-cream">
         <div className="mx-auto max-w-[62ch] px-6 pb-12">
           <h2 className="reveal text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
-            What I bring
+            ⭐ What I bring
           </h2>
+
           <div className="mt-6 grid grid-cols-1 gap-3">
             {skills.map((s, i) => (
               <div
@@ -188,8 +204,9 @@ function Index() {
       <section id="cv" className="bg-surface">
         <div className="mx-auto max-w-[62ch] px-6 py-12">
           <h2 className="reveal text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
-            Curriculum Vitae
+            📄 Curriculum Vitae
           </h2>
+
 
           <div className="mt-6 rounded-xl bg-cream p-5 ring-1 ring-black/5">
             <p className="text-lg font-semibold text-ink">{profile.name}</p>
@@ -201,17 +218,22 @@ function Index() {
             </p>
 
             <h3 className="mt-6 text-xs font-semibold uppercase tracking-[0.15em] text-brand">
-              Profile
+              👤 Profile
             </h3>
+
             <p className="mt-2 text-sm text-ink">
-              Marketing Management N6 graduate with strong communication, computer literacy and
-              time management. Calm under pressure and eager to apply classroom learning in a
-              working marketing team.
+              I am a dedicated Marketing Intern / Practical Trainee with a Marketing Management N6
+              qualification and practical experience in AI, digital communication and
+              customer-focused projects. I work well under pressure, manage my time effectively and
+              communicate clearly in person and in writing. I am looking for an opportunity to
+              grow within a marketing team while adding value from day one.
             </p>
 
+
             <h3 className="mt-6 text-xs font-semibold uppercase tracking-[0.15em] text-brand">
-              Education
+              🎓 Education
             </h3>
+
             <ul className="mt-2 space-y-2">
               {education.map((e) => (
                 <li key={e.school} className="text-sm">
@@ -222,8 +244,9 @@ function Index() {
             </ul>
 
             <h3 className="mt-6 text-xs font-semibold uppercase tracking-[0.15em] text-brand">
-              Qualifications
+              🏆 Qualifications
             </h3>
+
             <ul className="mt-2 list-disc space-y-2 pl-5 text-sm text-ink">
               {qualifications.map((q) => (
                 <li key={q.title}>
@@ -243,8 +266,9 @@ function Index() {
             </ul>
 
             <h3 className="mt-6 text-xs font-semibold uppercase tracking-[0.15em] text-brand">
-              Key skills
+              ⭐ Key skills
             </h3>
+
             <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-ink">
               {skills.map((s) => (
                 <li key={s.title}>{s.title}</li>
@@ -272,8 +296,9 @@ function Index() {
       <section className="bg-cream">
         <div className="mx-auto max-w-[62ch] px-6 py-12">
           <h2 className="reveal text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
-            Education
+            🎓 Education
           </h2>
+
           <ol className="mt-6 space-y-5 border-l border-brand/15 pl-5">
             {education.map((e, i) => (
               <li key={e.school} className="reveal relative" style={{ animationDelay: `${0.08 + i * 0.08}s` }}>
@@ -291,8 +316,9 @@ function Index() {
       <section className="bg-cream">
         <div className="mx-auto max-w-[62ch] px-6 pb-12">
           <h2 className="reveal text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
-            Qualifications
+            🏆 Qualifications
           </h2>
+
           <div className="mt-6 grid grid-cols-1 gap-3">
             {qualifications.map((q, i) => (
               <div
@@ -324,18 +350,19 @@ function Index() {
       <section id="contact" className="bg-brand">
         <div className="mx-auto max-w-[62ch] px-6 py-14">
           <h2 className="reveal text-[1.85rem] font-semibold text-cream" style={{ ...serif, lineHeight: 1.1 }}>
-            Let&apos;s talk
+            💬 Let&apos;s talk
           </h2>
           <p className="reveal mt-2 text-cream/75">
             Based in {profile.location}. Reach me directly and I&apos;ll reply fast.
           </p>
+
           <div className="mt-6 space-y-3">
             <a
               href={`tel:${profile.phone}`}
               className="reveal lift flex items-center justify-between gap-3 rounded-[10px] bg-brand-2 px-4 py-3 ring-1 ring-cream/15"
             >
               <span>
-                <span className="block text-xs uppercase tracking-[0.15em] text-cream/60">Phone</span>
+                <span className="block text-xs uppercase tracking-[0.15em] text-cream/60">📞 Phone</span>
                 <span className="block text-base text-cream">{profile.phoneDisplay}</span>
               </span>
               <span className="text-xs text-cream/50">tap to call</span>
@@ -346,7 +373,7 @@ function Index() {
             >
               <span>
                 <span className="block text-xs uppercase tracking-[0.15em] text-cream/60">
-                  Personal email
+                  ✉️ Personal email
                 </span>
                 <span className="block text-base text-cream break-all">{profile.personalEmail}</span>
               </span>
@@ -357,10 +384,24 @@ function Index() {
               className="reveal lift flex items-center justify-between gap-3 rounded-[10px] bg-brand-2 px-4 py-3 ring-1 ring-cream/15"
             >
               <span>
-                <span className="block text-xs uppercase tracking-[0.15em] text-cream/60">Work email</span>
+                <span className="block text-xs uppercase tracking-[0.15em] text-cream/60">✉️ Work email</span>
                 <span className="block text-base text-cream break-all">{profile.workEmail}</span>
               </span>
               <span className="text-xs text-cream/50">tap to email</span>
+            </a>
+            <a
+              href={profile.linkedinProfile}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="reveal lift flex items-center justify-between gap-3 rounded-[10px] bg-pink px-4 py-3"
+            >
+              <span>
+                <span className="block text-xs uppercase tracking-[0.15em] text-white/80">LinkedIn</span>
+                <span className="block text-base font-semibold text-white">
+                  💼 View my LinkedIn profile
+                </span>
+              </span>
+              <span className="text-xs text-white/70">opens new tab</span>
             </a>
             <a
               href={profile.githubProfile}
@@ -376,6 +417,7 @@ function Index() {
               </span>
               <span className="text-xs text-white/70">opens new tab</span>
             </a>
+
           </div>
 
           <ContactForm />

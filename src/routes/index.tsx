@@ -103,9 +103,18 @@ function Index() {
             >
               💻 View GitHub
             </a>
+            <a
+              href={profile.linkedinProfile}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline"
+            >
+              💼 View LinkedIn
+            </a>
             <a href="#cv" className="btn-outline">
               📄 View CV
             </a>
+
           </div>
         </div>
       </section>

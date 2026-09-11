@@ -376,6 +376,8 @@ function Index() {
               <span className="text-xs text-white/70">opens new tab</span>
             </a>
           </div>
+
+          <ContactForm />
         </div>
       </section>
     </main>

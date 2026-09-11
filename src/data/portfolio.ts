@@ -77,11 +77,13 @@ export const qualifications: Qualification[] = [
   {
     title: "Google Essentials Certificate",
     detail: "Foundations of digital marketing.",
-    certificateUrl: "", // paste your Google Essentials certificate link here
+    certificateUrl:
+      "https://www.coursera.org/programs/mict-tvet-august-2026-0bkt0/my-learning?myLearningTab=IN_PROGRESS",
   },
   {
     title: "Artificial Intelligence Bootcamp",
     detail: "Practical intro to applied AI tools.",
-    certificateUrl: "https://www.coursera.org/programs/mict-tvet-august-2026-0bkt0/my-learning?myLearningTab=IN_PROGRESS",
+    certificateUrl:
+      "https://www.coursera.org/programs/mict-tvet-august-2026-0bkt0/my-learning?myLearningTab=COMPLETED",
   },
 ];

@@ -58,16 +58,17 @@ function Index() {
               <img
                 src={profile.photo}
                 alt={`${profile.name}, ${profile.role}`}
-                className="size-20 shrink-0 rounded-full object-cover ring-2 ring-cream/30"
+                className="size-28 shrink-0 rounded-full object-cover ring-2 ring-cream/30"
               />
             ) : (
               <span
-                className="flex size-20 shrink-0 items-center justify-center rounded-full bg-brand-2 text-2xl font-semibold text-cream ring-2 ring-cream/20"
+                className="flex size-28 shrink-0 items-center justify-center rounded-full bg-brand-2 text-2xl font-semibold text-cream ring-2 ring-cream/20"
                 aria-label="Profile photo placeholder"
               >
                 AJ
               </span>
             )}
+
             <div>
               <h1
                 className="text-balance font-semibold text-cream"
@@ -82,9 +83,13 @@ function Index() {
           </div>
 
           <p className="reveal mt-5 text-cream/80" style={{ animationDelay: "0.1s" }}>
-            Based in {profile.location}. Marketing Management N6 with hands-on AI project
-            experience, looking for an internship or practical training placement.
+            I am a motivated Marketing Intern / Practical Trainee based in {profile.location}, with a
+            Marketing Management N6 qualification and hands-on experience across AI, digital
+            communication and customer-focused projects. I bring strong computer literacy, clear
+            communication and calm time management — and I am eager to contribute to a marketing
+            team while growing my practical skills.
           </p>
+
 
           <div className="reveal mt-7 flex flex-wrap gap-3" style={{ animationDelay: "0.18s" }}>
             <a href="#contact" className="btn-pink">

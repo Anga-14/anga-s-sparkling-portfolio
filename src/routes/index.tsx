@@ -218,10 +218,13 @@ function Index() {
               Profile
             </h3>
             <p className="mt-2 text-sm text-ink">
-              Marketing Management N6 graduate with strong communication, computer literacy and
-              time management. Calm under pressure and eager to apply classroom learning in a
-              working marketing team.
+              I am a dedicated Marketing Intern / Practical Trainee with a Marketing Management N6
+              qualification and practical experience in AI, digital communication and
+              customer-focused projects. I work well under pressure, manage my time effectively and
+              communicate clearly in person and in writing. I am looking for an opportunity to
+              grow within a marketing team while adding value from day one.
             </p>
+
 
             <h3 className="mt-6 text-xs font-semibold uppercase tracking-[0.15em] text-brand">
               Education

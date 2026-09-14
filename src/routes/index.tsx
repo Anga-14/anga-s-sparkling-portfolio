@@ -51,8 +51,9 @@ function Index() {
       style={{ fontFamily: "'Work Sans', sans-serif" }}
     >
       {/* Hero */}
-      <section className="bg-brand">
-        <div className="mx-auto max-w-[62ch] px-6 pt-10 pb-12">
+      <section className="relative overflow-hidden bg-brand">
+        <div aria-hidden="true" className="hero-glow" />
+        <div className="relative mx-auto max-w-3xl px-6 pt-14 pb-16">
           <div className="reveal flex items-center gap-4">
             {profile.photo ? (
               <img
@@ -82,7 +83,15 @@ function Index() {
             </div>
           </div>
 
-          <p className="reveal mt-5 text-cream/80" style={{ animationDelay: "0.1s" }}>
+          <p
+            className="reveal mt-6 inline-flex items-center gap-2 rounded-full bg-cream/10 px-3.5 py-1.5 text-xs font-medium text-cream/85 ring-1 ring-cream/20"
+            style={{ animationDelay: "0.05s" }}
+          >
+            <span className="size-2 rounded-full bg-pink" aria-hidden="true" />
+            Open to internships · 📍 {profile.location}
+          </p>
+
+          <p className="reveal mt-4 max-w-2xl leading-relaxed text-cream/80" style={{ animationDelay: "0.1s" }}>
             I am a motivated Marketing Intern / Practical Trainee based in {profile.location}, with a
             Marketing Management N6 qualification and hands-on experience across AI, digital
             communication and customer-focused projects. I bring strong computer literacy, clear
@@ -121,7 +130,7 @@ function Index() {
 
       {/* Projects */}
       <section id="projects" className="bg-cream">
-        <div className="mx-auto max-w-[62ch] px-6 py-14">
+        <div className="mx-auto max-w-3xl px-6 py-16">
           <p className="reveal text-xs font-semibold uppercase tracking-[0.2em] text-pink">
             Selected work
           </p>
@@ -135,11 +144,11 @@ function Index() {
           <p className="mt-2 text-sm text-mute">
             Each project opens in a new tab — the live app, or the code behind it.
           </p>
-          <div className="mt-7 grid grid-cols-1 gap-5">
+          <div className="mt-7 grid grid-cols-1 gap-5 md:grid-cols-2">
             {projects.map((p, i) => (
               <article
                 key={p.title}
-                className="reveal lift group relative overflow-hidden rounded-2xl bg-surface p-6 ring-1 ring-black/5"
+                className="reveal lift group relative flex flex-col overflow-hidden rounded-2xl bg-surface p-6 ring-1 ring-black/5"
                 style={{ animationDelay: `${0.08 + i * 0.06}s` }}
               >
                 <span className="absolute inset-x-0 top-0 h-1 bg-pink" />
@@ -154,7 +163,7 @@ function Index() {
                   {p.title}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-mute">{p.blurb}</p>
-                <div className="mt-5 flex flex-wrap gap-3">
+                <div className="mt-auto flex flex-wrap gap-3 pt-5">
                   <a
                     href={p.liveUrl}
                     target="_blank"
@@ -180,19 +189,25 @@ function Index() {
 
       {/* Skills */}
       <section className="bg-cream">
-        <div className="mx-auto max-w-[62ch] px-6 pb-12">
-          <h2 className="reveal text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
+        <div className="mx-auto max-w-3xl px-6 pb-16">
+          <p className="reveal text-xs font-semibold uppercase tracking-[0.2em] text-pink">
+            Strengths
+          </p>
+          <h2 className="reveal mt-2 text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
             ⭐ What I bring
           </h2>
 
-          <div className="mt-6 grid grid-cols-1 gap-3">
+          <div className="mt-6 grid grid-cols-1 gap-3 md:grid-cols-2">
             {skills.map((s, i) => (
               <div
                 key={s.title}
                 className="reveal lift rounded-[10px] bg-surface p-4 ring-1 ring-black/5"
                 style={{ animationDelay: `${0.08 + i * 0.06}s` }}
               >
-                <p className="text-base font-semibold text-ink">{s.title}</p>
+                <p className="text-base font-semibold text-ink">
+                  <span className="mr-1.5 text-pink" aria-hidden="true">✔</span>
+                  {s.title}
+                </p>
                 <p className="mt-1 text-sm text-mute">{s.detail}</p>
               </div>
             ))}
@@ -202,8 +217,11 @@ function Index() {
 
       {/* CV */}
       <section id="cv" className="bg-surface">
-        <div className="mx-auto max-w-[62ch] px-6 py-12">
-          <h2 className="reveal text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
+        <div className="mx-auto max-w-3xl px-6 py-16">
+          <p className="reveal text-xs font-semibold uppercase tracking-[0.2em] text-pink">
+            On paper
+          </p>
+          <h2 className="reveal mt-2 text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
             📄 Curriculum Vitae
           </h2>
 
@@ -294,15 +312,18 @@ function Index() {
 
       {/* Education */}
       <section className="bg-cream">
-        <div className="mx-auto max-w-[62ch] px-6 py-12">
-          <h2 className="reveal text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
+        <div className="mx-auto max-w-3xl px-6 py-16">
+          <p className="reveal text-xs font-semibold uppercase tracking-[0.2em] text-pink">
+            Background
+          </p>
+          <h2 className="reveal mt-2 text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
             🎓 Education
           </h2>
 
           <ol className="mt-6 space-y-5 border-l border-brand/15 pl-5">
             {education.map((e, i) => (
               <li key={e.school} className="reveal relative" style={{ animationDelay: `${0.08 + i * 0.08}s` }}>
-                <span className="absolute -left-[26px] top-1 size-3 rounded-full bg-brand-2 ring-4 ring-cream"></span>
+                <span className="absolute -left-[26px] top-1 size-3 rounded-full bg-pink ring-4 ring-cream"></span>
                 <p className="text-xs uppercase tracking-[0.15em] text-mute">{e.period}</p>
                 <p className="mt-1 text-base font-semibold text-ink">{e.school}</p>
                 <p className="mt-1 text-sm text-mute">{e.detail}</p>
@@ -314,12 +335,15 @@ function Index() {
 
       {/* Qualifications */}
       <section className="bg-cream">
-        <div className="mx-auto max-w-[62ch] px-6 pb-12">
-          <h2 className="reveal text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
+        <div className="mx-auto max-w-3xl px-6 pb-16">
+          <p className="reveal text-xs font-semibold uppercase tracking-[0.2em] text-pink">
+            Certificates
+          </p>
+          <h2 className="reveal mt-2 text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
             🏆 Qualifications
           </h2>
 
-          <div className="mt-6 grid grid-cols-1 gap-3">
+          <div className="mt-6 grid grid-cols-1 gap-3 md:grid-cols-2">
             {qualifications.map((q, i) => (
               <div
                 key={q.title}
@@ -347,8 +371,9 @@ function Index() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="bg-brand">
-        <div className="mx-auto max-w-[62ch] px-6 py-14">
+      <section id="contact" className="relative overflow-hidden bg-brand">
+        <div aria-hidden="true" className="hero-glow" />
+        <div className="relative mx-auto max-w-3xl px-6 py-16">
           <h2 className="reveal text-[1.85rem] font-semibold text-cream" style={{ ...serif, lineHeight: 1.1 }}>
             💬 Let&apos;s talk
           </h2>
@@ -423,6 +448,13 @@ function Index() {
           <ContactForm />
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="border-t border-cream/10 bg-brand">
+        <div className="mx-auto max-w-3xl px-6 py-6 text-center text-xs text-cream/55">
+          © {new Date().getFullYear()} {profile.name} · {profile.role} · {profile.location}
+        </div>
+      </footer>
     </main>
   );
 }

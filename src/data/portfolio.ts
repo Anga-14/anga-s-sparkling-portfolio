@@ -11,7 +11,7 @@ export const profile = {
   personalEmail: "angajonas14@gmail.com",
   workEmail: "anga.jonas@capaciti.org.za",
   githubProfile: "https://github.com/angajonas14-cell",
-  linkedinProfile: "https://www.linkedin.com/in/anga-jonas", // replace with your real LinkedIn URL
+  linkedinProfile: "https://www.linkedin.com/in/anga-jonas", // TODO: replace with your real LinkedIn URL
 
   // Profile photo (CDN asset).
   photo: photoAsset.url,
@@ -28,7 +28,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Sentiment 360",
+    title: "Sentiment Insights Lab",
     blurb: "Customer sentiment analysis dashboard that turns feedback into clear signals.",
     liveUrl: "https://customer-sentiment-d-zp3n.bolt.host",
     githubUrl: "https://customer-sentiment-d-zp3n.bolt.host",
@@ -42,8 +42,8 @@ export const projects: Project[] = [
   {
     title: "Coffee Shop Chatbot",
     blurb: "A local coffee shop assistant that answers orders and menu questions.",
-    liveUrl: "https://local-coffee-shop-so-yxwi.bolt.host",
-    githubUrl: "https://local-coffee-shop-so-yxwi.bolt.host",
+    liveUrl: "https://coffeeshop-k14n.bolt.host",
+    githubUrl: "https://coffeeshop-k14n.bolt.host",
   },
 ];
 

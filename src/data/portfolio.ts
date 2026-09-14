@@ -30,8 +30,8 @@ export const projects: Project[] = [
   {
     title: "Sentiment Insights Lab",
     blurb: "Customer sentiment analysis dashboard that turns feedback into clear signals.",
-    liveUrl: "https://customer-sentiment-d-zp3n.bolt.host",
-    githubUrl: "https://customer-sentiment-d-zp3n.bolt.host",
+    liveUrl: "https://sentimentlab-ziwexqtc.manus.space",
+    githubUrl: "https://sentimentlab-ziwexqtc.manus.space",
   },
   {
     title: "Healthy Lifestyle",

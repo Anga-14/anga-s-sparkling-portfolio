@@ -217,8 +217,11 @@ function Index() {
 
       {/* CV */}
       <section id="cv" className="bg-surface">
-        <div className="mx-auto max-w-[62ch] px-6 py-12">
-          <h2 className="reveal text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
+        <div className="mx-auto max-w-3xl px-6 py-16">
+          <p className="reveal text-xs font-semibold uppercase tracking-[0.2em] text-pink">
+            On paper
+          </p>
+          <h2 className="reveal mt-2 text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
             📄 Curriculum Vitae
           </h2>
 
@@ -309,15 +312,18 @@ function Index() {
 
       {/* Education */}
       <section className="bg-cream">
-        <div className="mx-auto max-w-[62ch] px-6 py-12">
-          <h2 className="reveal text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
+        <div className="mx-auto max-w-3xl px-6 py-16">
+          <p className="reveal text-xs font-semibold uppercase tracking-[0.2em] text-pink">
+            Background
+          </p>
+          <h2 className="reveal mt-2 text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
             🎓 Education
           </h2>
 
           <ol className="mt-6 space-y-5 border-l border-brand/15 pl-5">
             {education.map((e, i) => (
               <li key={e.school} className="reveal relative" style={{ animationDelay: `${0.08 + i * 0.08}s` }}>
-                <span className="absolute -left-[26px] top-1 size-3 rounded-full bg-brand-2 ring-4 ring-cream"></span>
+                <span className="absolute -left-[26px] top-1 size-3 rounded-full bg-pink ring-4 ring-cream"></span>
                 <p className="text-xs uppercase tracking-[0.15em] text-mute">{e.period}</p>
                 <p className="mt-1 text-base font-semibold text-ink">{e.school}</p>
                 <p className="mt-1 text-sm text-mute">{e.detail}</p>
@@ -329,12 +335,15 @@ function Index() {
 
       {/* Qualifications */}
       <section className="bg-cream">
-        <div className="mx-auto max-w-[62ch] px-6 pb-12">
-          <h2 className="reveal text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
+        <div className="mx-auto max-w-3xl px-6 pb-16">
+          <p className="reveal text-xs font-semibold uppercase tracking-[0.2em] text-pink">
+            Certificates
+          </p>
+          <h2 className="reveal mt-2 text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
             🏆 Qualifications
           </h2>
 
-          <div className="mt-6 grid grid-cols-1 gap-3">
+          <div className="mt-6 grid grid-cols-1 gap-3 md:grid-cols-2">
             {qualifications.map((q, i) => (
               <div
                 key={q.title}
@@ -362,8 +371,9 @@ function Index() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="bg-brand">
-        <div className="mx-auto max-w-[62ch] px-6 py-14">
+      <section id="contact" className="relative overflow-hidden bg-brand">
+        <div aria-hidden="true" className="hero-glow" />
+        <div className="relative mx-auto max-w-3xl px-6 py-16">
           <h2 className="reveal text-[1.85rem] font-semibold text-cream" style={{ ...serif, lineHeight: 1.1 }}>
             💬 Let&apos;s talk
           </h2>
@@ -438,6 +448,13 @@ function Index() {
           <ContactForm />
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="border-t border-cream/10 bg-brand">
+        <div className="mx-auto max-w-3xl px-6 py-6 text-center text-xs text-cream/55">
+          © {new Date().getFullYear()} {profile.name} · {profile.role} · {profile.location}
+        </div>
+      </footer>
     </main>
   );
 }

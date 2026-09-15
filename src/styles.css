@@ -200,6 +200,15 @@
   box-shadow: 0 14px 30px -18px oklch(0.29 0.008 260 / 55%);
 }
 
+.hero-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(42rem 22rem at 85% -10%, color-mix(in oklab, var(--pink) 22%, transparent), transparent 65%),
+    radial-gradient(36rem 20rem at 8% 110%, color-mix(in oklab, var(--cream) 8%, transparent), transparent 60%);
+}
+
 @utility btn-pink {
   display: inline-flex;
   align-items: center;
@@ -210,11 +219,13 @@
   font-size: 0.9rem;
   font-weight: 600;
   color: #fff;
-  transition: transform 0.2s ease, filter 0.2s ease;
+  box-shadow: 0 10px 22px -12px color-mix(in oklab, var(--pink) 75%, transparent);
+  transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
     filter: brightness(1.08);
     transform: translateY(-2px);
+    box-shadow: 0 14px 26px -12px color-mix(in oklab, var(--pink) 85%, transparent);
   }
 }
 

@@ -225,6 +225,7 @@
   &:hover {
     filter: brightness(1.08);
     transform: translateY(-2px);
+    box-shadow: 0 14px 26px -12px color-mix(in oklab, var(--pink) 85%, transparent);
   }
 }
 

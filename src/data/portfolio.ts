@@ -11,7 +11,7 @@ export const profile = {
   personalEmail: "angajonas14@gmail.com",
   workEmail: "anga.jonas@capaciti.org.za",
   githubProfile: "https://github.com/angajonas14-cell",
-  linkedinProfile: "https://www.linkedin.com/in/anga-jonas",
+  linkedinProfile: "https://www.linkedin.com/",
 
   // Profile photo (CDN asset).
   photo: photoAsset.url,

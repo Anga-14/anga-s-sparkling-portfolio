@@ -68,6 +68,7 @@
   --color-ink: var(--ink);
   --color-mute: var(--mute);
   --color-pink: var(--pink);
+  --color-mist: var(--mist);
 }
 
 :root {
@@ -113,6 +114,7 @@
   --ink: oklch(0.23 0.008 260);
   --mute: oklch(0.53 0.01 260);
   --pink: oklch(0.62 0.17 350);
+  --mist: oklch(0.935 0.008 260);
 }
 
 .dark {
@@ -157,6 +159,7 @@
   --ink: oklch(0.96 0.002 260);
   --mute: oklch(0.72 0.008 260);
   --pink: oklch(0.66 0.17 350);
+  --mist: oklch(0.275 0.01 260);
 }
 
 @layer base {

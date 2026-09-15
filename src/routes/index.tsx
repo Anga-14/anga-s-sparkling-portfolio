@@ -53,17 +53,17 @@ function Index() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-brand">
         <div aria-hidden="true" className="hero-glow" />
-        <div className="relative mx-auto max-w-3xl px-6 pt-14 pb-16">
-          <div className="reveal flex items-center gap-4">
+        <div className="relative mx-auto max-w-4xl px-6 pt-14 pb-16">
+          <div className="reveal flex items-center gap-5 sm:gap-7">
             {profile.photo ? (
               <img
                 src={profile.photo}
                 alt={`${profile.name}, ${profile.role}`}
-                className="size-28 shrink-0 rounded-full object-cover ring-2 ring-cream/30"
+                className="size-32 shrink-0 rounded-full object-cover shadow-xl ring-4 ring-cream/25 sm:size-40"
               />
             ) : (
               <span
-                className="flex size-28 shrink-0 items-center justify-center rounded-full bg-brand-2 text-2xl font-semibold text-cream ring-2 ring-cream/20"
+                className="flex size-32 shrink-0 items-center justify-center rounded-full bg-brand-2 text-2xl font-semibold text-cream ring-4 ring-cream/20 sm:size-40"
                 aria-label="Profile photo placeholder"
               >
                 AJ
@@ -129,7 +129,7 @@ function Index() {
       </section>
 
       {/* Projects */}
-      <section id="projects" className="bg-cream">
+      <section id="projects" className="bg-mist">
         <div className="mx-auto max-w-3xl px-6 py-16">
           <p className="reveal text-xs font-semibold uppercase tracking-[0.2em] text-pink">
             Selected work
@@ -311,7 +311,7 @@ function Index() {
       </section>
 
       {/* Education */}
-      <section className="bg-cream">
+      <section className="bg-mist">
         <div className="mx-auto max-w-3xl px-6 py-16">
           <p className="reveal text-xs font-semibold uppercase tracking-[0.2em] text-pink">
             Background
@@ -323,7 +323,7 @@ function Index() {
           <ol className="mt-6 space-y-5 border-l border-brand/15 pl-5">
             {education.map((e, i) => (
               <li key={e.school} className="reveal relative" style={{ animationDelay: `${0.08 + i * 0.08}s` }}>
-                <span className="absolute -left-[26px] top-1 size-3 rounded-full bg-pink ring-4 ring-cream"></span>
+                <span className="absolute -left-[26px] top-1 size-3 rounded-full bg-pink ring-4 ring-mist"></span>
                 <p className="text-xs uppercase tracking-[0.15em] text-mute">{e.period}</p>
                 <p className="mt-1 text-base font-semibold text-ink">{e.school}</p>
                 <p className="mt-1 text-sm text-mute">{e.detail}</p>

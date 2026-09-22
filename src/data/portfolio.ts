@@ -46,7 +46,7 @@ export const projects: Project[] = [
     githubUrl: "https://coffeeshop-k14n.bolt.host",
   },
   {
-    title: "Prompt Career Match Flow",
+    title: "Career Match",
     blurb: "A career-match flow that connects prompts to the right opportunities.",
     liveUrl: "https://prompt-career-match-flow.base44.app",
     githubUrl: "https://prompt-career-match-flow.base44.app",

@@ -114,8 +114,7 @@ function Index() {
             </a>
             <a
               href={profile.linkedinProfile}
-              target="_blank"
-              rel="noopener noreferrer"
+              target="_top"
               className="btn-outline"
             >
               💼 View LinkedIn
@@ -416,8 +415,7 @@ function Index() {
             </a>
             <a
               href={profile.linkedinProfile}
-              target="_blank"
-              rel="noopener noreferrer"
+              target="_top"
               className="reveal lift flex items-center justify-between gap-3 rounded-[10px] bg-pink px-4 py-3"
             >
               <span>
@@ -426,7 +424,7 @@ function Index() {
                   💼 View my LinkedIn profile
                 </span>
               </span>
-              <span className="text-xs text-white/70">opens new tab</span>
+              <span className="text-xs text-white/70">open LinkedIn</span>
             </a>
             <a
               href={profile.githubProfile}

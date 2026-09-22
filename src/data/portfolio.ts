@@ -45,6 +45,12 @@ export const projects: Project[] = [
     liveUrl: "https://coffeeshop-k14n.bolt.host",
     githubUrl: "https://coffeeshop-k14n.bolt.host",
   },
+  {
+    title: "Prompt Career Match Flow",
+    blurb: "A career-match flow that connects prompts to the right opportunities.",
+    liveUrl: "https://prompt-career-match-flow.base44.app",
+    githubUrl: "https://prompt-career-match-flow.base44.app",
+  },
 ];
 
 export const skills = [

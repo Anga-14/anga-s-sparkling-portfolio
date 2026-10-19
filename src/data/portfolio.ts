@@ -68,7 +68,7 @@ export const education = [
   },
   {
     period: "2019 – 2023",
-    school: "Zonnebloeom High School",
+    school: "Zonnebloem High School",
     detail: "Completed Matric.",
   },
 ];

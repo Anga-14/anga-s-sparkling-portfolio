@@ -87,7 +87,7 @@ function Index() {
             className="reveal mt-6 inline-flex items-center gap-2 rounded-full bg-cream/10 px-3.5 py-1.5 text-xs font-medium text-cream/85 ring-1 ring-cream/20"
             style={{ animationDelay: "0.05s" }}
           >
-            <span className="size-2 rounded-full bg-pink" aria-hidden="true" />
+            <span className="size-2 rounded-full bg-brand-accent" aria-hidden="true" />
             Open to internships · {profile.location}
           </p>
 
@@ -101,7 +101,7 @@ function Index() {
 
 
           <div className="reveal mt-7 flex flex-wrap gap-3" style={{ animationDelay: "0.18s" }}>
-            <a href="#contact" className="btn-pink">
+            <a href="#contact" className="btn-accent">
               Get in touch
             </a>
             <a
@@ -131,7 +131,7 @@ function Index() {
       {/* Projects */}
       <section id="projects" className="bg-mist">
         <div className="mx-auto max-w-3xl px-6 py-16">
-          <p className="reveal text-xs font-semibold uppercase tracking-[0.2em] text-pink">
+          <p className="reveal text-xs font-semibold uppercase tracking-[0.2em] text-brand-accent">
             Selected work
           </p>
           <h2
@@ -151,7 +151,7 @@ function Index() {
                 className="reveal lift group relative flex flex-col overflow-hidden rounded-2xl bg-surface p-6 ring-1 ring-black/5"
                 style={{ animationDelay: `${0.08 + i * 0.06}s` }}
               >
-                <span className="absolute inset-x-0 top-0 h-1 bg-pink" />
+                <span className="absolute inset-x-0 top-0 h-1 bg-brand-accent" />
                 <span
                   className="pointer-events-none absolute -right-4 -top-3 select-none text-[5rem] font-bold leading-none text-brand/5"
                   style={serif}
@@ -168,7 +168,7 @@ function Index() {
                     href={p.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-pink"
+                    className="btn-accent"
                   >
                     Live Demo
                   </a>
@@ -176,7 +176,7 @@ function Index() {
                     href={p.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-pink-soft"
+                    className="btn-accent-soft"
                   >
                     GitHub Code
                   </a>
@@ -190,7 +190,7 @@ function Index() {
       {/* Skills */}
       <section className="bg-cream">
         <div className="mx-auto max-w-3xl px-6 pb-16">
-          <p className="reveal text-xs font-semibold uppercase tracking-[0.2em] text-pink">
+          <p className="reveal text-xs font-semibold uppercase tracking-[0.2em] text-brand-accent">
             Strengths
           </p>
           <h2 className="reveal mt-2 text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
@@ -217,7 +217,7 @@ function Index() {
       {/* CV */}
       <section id="cv" className="bg-surface">
         <div className="mx-auto max-w-3xl px-6 py-16">
-          <p className="reveal text-xs font-semibold uppercase tracking-[0.2em] text-pink">
+          <p className="reveal text-xs font-semibold uppercase tracking-[0.2em] text-brand-accent">
             On paper
           </p>
           <h2 className="reveal mt-2 text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
@@ -273,7 +273,7 @@ function Index() {
                       href={q.certificateUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="ml-2 inline-flex items-center gap-1 rounded-full bg-pink px-2 py-0.5 text-xs font-medium text-white hover:opacity-90"
+                      className="ml-2 inline-flex items-center gap-1 rounded-full bg-brand-accent px-2 py-0.5 text-xs font-medium text-cream hover:opacity-90"
                     >
                       View certificate
                     </a>
@@ -299,7 +299,7 @@ function Index() {
                 href={profile.cvFile}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-pink"
+                className="btn-accent"
                 download
               >
                 Download CV (PDF)
@@ -312,7 +312,7 @@ function Index() {
       {/* Education */}
       <section className="bg-mist">
         <div className="mx-auto max-w-3xl px-6 py-16">
-          <p className="reveal text-xs font-semibold uppercase tracking-[0.2em] text-pink">
+          <p className="reveal text-xs font-semibold uppercase tracking-[0.2em] text-brand-accent">
             Background
           </p>
           <h2 className="reveal mt-2 text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
@@ -322,7 +322,7 @@ function Index() {
           <ol className="mt-6 space-y-5 border-l border-brand/15 pl-5">
             {education.map((e, i) => (
               <li key={e.school} className="reveal relative" style={{ animationDelay: `${0.08 + i * 0.08}s` }}>
-                <span className="absolute -left-[26px] top-1 size-3 rounded-full bg-pink ring-4 ring-mist"></span>
+                <span className="absolute -left-[26px] top-1 size-3 rounded-full bg-brand-accent ring-4 ring-mist"></span>
                 <p className="text-xs uppercase tracking-[0.15em] text-mute">{e.period}</p>
                 <p className="mt-1 text-base font-semibold text-ink">{e.school}</p>
                 <p className="mt-1 text-sm text-mute">{e.detail}</p>
@@ -335,7 +335,7 @@ function Index() {
       {/* Qualifications */}
       <section className="bg-cream">
         <div className="mx-auto max-w-3xl px-6 pb-16">
-          <p className="reveal text-xs font-semibold uppercase tracking-[0.2em] text-pink">
+          <p className="reveal text-xs font-semibold uppercase tracking-[0.2em] text-brand-accent">
             Certificates
           </p>
           <h2 className="reveal mt-2 text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
@@ -356,7 +356,7 @@ function Index() {
                       href={q.certificateUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn-pink text-xs"
+                      className="btn-accent text-xs"
                     >
                       View certificate
                     </a>
@@ -417,29 +417,29 @@ function Index() {
               href={profile.linkedinProfile}
               target="_blank"
               rel="noopener noreferrer"
-              className="reveal lift flex items-center justify-between gap-3 rounded-[10px] bg-pink px-4 py-3"
+              className="reveal lift flex items-center justify-between gap-3 rounded-[10px] bg-brand-accent px-4 py-3"
             >
               <span>
-                <span className="block text-xs uppercase tracking-[0.15em] text-white/80">LinkedIn</span>
-                <span className="block text-base font-semibold text-white">
+                <span className="block text-xs uppercase tracking-[0.15em] text-cream/80">LinkedIn</span>
+                <span className="block text-base font-semibold text-cream">
                   View my LinkedIn profile
                 </span>
               </span>
-              <span className="text-xs text-white/70">opens LinkedIn</span>
+              <span className="text-xs text-cream/70">opens LinkedIn</span>
             </a>
             <a
               href={profile.githubProfile}
               target="_blank"
               rel="noopener noreferrer"
-              className="reveal lift flex items-center justify-between gap-3 rounded-[10px] bg-pink px-4 py-3"
+              className="reveal lift flex items-center justify-between gap-3 rounded-[10px] bg-brand-accent px-4 py-3"
             >
               <span>
-                <span className="block text-xs uppercase tracking-[0.15em] text-white/80">GitHub</span>
-                <span className="block text-base font-semibold text-white">
+                <span className="block text-xs uppercase tracking-[0.15em] text-cream/80">GitHub</span>
+                <span className="block text-base font-semibold text-cream">
                   View my GitHub profile
                 </span>
               </span>
-              <span className="text-xs text-white/70">opens new tab</span>
+              <span className="text-xs text-cream/70">opens new tab</span>
             </a>
 
           </div>
@@ -481,7 +481,7 @@ function ContactForm() {
   }
 
   const field =
-    "w-full rounded-[10px] bg-brand-2 px-4 py-3 text-cream placeholder:text-cream/45 ring-1 ring-cream/15 outline-none focus:ring-2 focus:ring-pink";
+    "w-full rounded-[10px] bg-brand-2 px-4 py-3 text-cream placeholder:text-cream/45 ring-1 ring-cream/15 outline-none focus:ring-2 focus:ring-brand-accent";
 
   return (
     <form onSubmit={handleSubmit} className="reveal mt-8 space-y-3">
@@ -523,7 +523,7 @@ function ContactForm() {
         onChange={(e) => setMessage(e.target.value)}
         required
       />
-      <button type="submit" className="btn-pink" disabled={!valid}>
+      <button type="submit" className="btn-accent" disabled={!valid}>
         Send message
       </button>
       {sent && (

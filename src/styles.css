@@ -67,7 +67,7 @@
   --color-surface: var(--surface);
   --color-ink: var(--ink);
   --color-mute: var(--mute);
-  --color-pink: var(--pink);
+  --color-brand-accent: var(--brand-accent);
   --color-mist: var(--mist);
 }
 
@@ -113,7 +113,7 @@
   --surface: oklch(1 0 0);
   --ink: oklch(0.23 0.008 260);
   --mute: oklch(0.53 0.01 260);
-  --pink: oklch(0.62 0.17 350);
+  --brand-accent: oklch(0.47 0.11 250);
   --mist: oklch(0.935 0.008 260);
 }
 
@@ -158,7 +158,7 @@
   --surface: oklch(0.3 0.008 260);
   --ink: oklch(0.96 0.002 260);
   --mute: oklch(0.72 0.008 260);
-  --pink: oklch(0.66 0.17 350);
+  --brand-accent: oklch(0.58 0.11 250);
   --mist: oklch(0.275 0.01 260);
 }
 
@@ -208,31 +208,31 @@
   inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(42rem 22rem at 85% -10%, color-mix(in oklab, var(--pink) 22%, transparent), transparent 65%),
+    radial-gradient(42rem 22rem at 85% -10%, color-mix(in oklab, var(--brand-accent) 22%, transparent), transparent 65%),
     radial-gradient(36rem 20rem at 8% 110%, color-mix(in oklab, var(--cream) 8%, transparent), transparent 60%);
 }
 
-@utility btn-pink {
+@utility btn-accent {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   border-radius: 0.6rem;
-  background: var(--pink);
+  background: var(--brand-accent);
   padding: 0.7rem 1.15rem;
   font-size: 0.9rem;
   font-weight: 600;
   color: #fff;
-  box-shadow: 0 10px 22px -12px color-mix(in oklab, var(--pink) 75%, transparent);
+  box-shadow: 0 10px 22px -12px color-mix(in oklab, var(--brand-accent) 75%, transparent);
   transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
     filter: brightness(1.08);
     transform: translateY(-2px);
-    box-shadow: 0 14px 26px -12px color-mix(in oklab, var(--pink) 85%, transparent);
+    box-shadow: 0 14px 26px -12px color-mix(in oklab, var(--brand-accent) 85%, transparent);
   }
 }
 
-@utility btn-pink-soft {
+@utility btn-accent-soft {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -241,12 +241,12 @@
   padding: 0.7rem 1.15rem;
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--pink);
-  box-shadow: inset 0 0 0 1.5px var(--pink);
+  color: var(--brand-accent);
+  box-shadow: inset 0 0 0 1.5px var(--brand-accent);
   transition: transform 0.2s ease, background 0.2s ease;
 
   &:hover {
-    background: color-mix(in oklab, var(--pink) 12%, transparent);
+    background: color-mix(in oklab, var(--brand-accent) 12%, transparent);
     transform: translateY(-2px);
   }
 }

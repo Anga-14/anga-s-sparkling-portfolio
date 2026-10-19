@@ -205,7 +205,6 @@ function Index() {
                 style={{ animationDelay: `${0.08 + i * 0.06}s` }}
               >
                 <p className="text-base font-semibold text-ink">
-                  <span className="mr-1.5 text-pink" aria-hidden="true">✔</span>
                   {s.title}
                 </p>
                 <p className="mt-1 text-sm text-mute">{s.detail}</p>

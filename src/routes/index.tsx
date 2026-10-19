@@ -88,7 +88,7 @@ function Index() {
             style={{ animationDelay: "0.05s" }}
           >
             <span className="size-2 rounded-full bg-pink" aria-hidden="true" />
-            Open to internships · 📍 {profile.location}
+            Open to internships · {profile.location}
           </p>
 
           <p className="reveal mt-4 max-w-2xl leading-relaxed text-cream/80" style={{ animationDelay: "0.1s" }}>
@@ -110,7 +110,7 @@ function Index() {
               rel="noopener noreferrer"
               className="btn-outline"
             >
-              💻 View GitHub
+              View GitHub
             </a>
             <a
               href={profile.linkedinProfile}
@@ -118,10 +118,10 @@ function Index() {
               rel="noopener noreferrer"
               className="btn-outline"
             >
-              💼 View LinkedIn
+              View LinkedIn
             </a>
             <a href="#cv" className="btn-outline">
-              📄 View CV
+              View CV
             </a>
 
           </div>
@@ -138,7 +138,7 @@ function Index() {
             className="reveal mt-2 text-[1.75rem] font-semibold text-brand"
             style={{ ...serif, lineHeight: 1.1 }}
           >
-            🚀 Projects
+            Projects
           </h2>
 
           <p className="mt-2 text-sm text-mute">
@@ -170,7 +170,7 @@ function Index() {
                     rel="noopener noreferrer"
                     className="btn-pink"
                   >
-                    🚀 Live Demo
+                    Live Demo
                   </a>
                   <a
                     href={p.githubUrl}
@@ -178,7 +178,7 @@ function Index() {
                     rel="noopener noreferrer"
                     className="btn-pink-soft"
                   >
-                    💻 GitHub Code
+                    GitHub Code
                   </a>
                 </div>
               </article>
@@ -194,7 +194,7 @@ function Index() {
             Strengths
           </p>
           <h2 className="reveal mt-2 text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
-            ⭐ What I bring
+            What I bring
           </h2>
 
           <div className="mt-6 grid grid-cols-1 gap-3 md:grid-cols-2">
@@ -205,7 +205,6 @@ function Index() {
                 style={{ animationDelay: `${0.08 + i * 0.06}s` }}
               >
                 <p className="text-base font-semibold text-ink">
-                  <span className="mr-1.5 text-pink" aria-hidden="true">✔</span>
                   {s.title}
                 </p>
                 <p className="mt-1 text-sm text-mute">{s.detail}</p>
@@ -222,7 +221,7 @@ function Index() {
             On paper
           </p>
           <h2 className="reveal mt-2 text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
-            📄 Curriculum Vitae
+            Curriculum Vitae
           </h2>
 
 
@@ -236,7 +235,7 @@ function Index() {
             </p>
 
             <h3 className="mt-6 text-xs font-semibold uppercase tracking-[0.15em] text-brand">
-              👤 Profile
+              Profile
             </h3>
 
             <p className="mt-2 text-sm text-ink">
@@ -249,7 +248,7 @@ function Index() {
 
 
             <h3 className="mt-6 text-xs font-semibold uppercase tracking-[0.15em] text-brand">
-              🎓 Education
+              Education
             </h3>
 
             <ul className="mt-2 space-y-2">
@@ -262,7 +261,7 @@ function Index() {
             </ul>
 
             <h3 className="mt-6 text-xs font-semibold uppercase tracking-[0.15em] text-brand">
-              🏆 Qualifications
+              Qualifications
             </h3>
 
             <ul className="mt-2 list-disc space-y-2 pl-5 text-sm text-ink">
@@ -276,7 +275,7 @@ function Index() {
                       rel="noopener noreferrer"
                       className="ml-2 inline-flex items-center gap-1 rounded-full bg-pink px-2 py-0.5 text-xs font-medium text-white hover:opacity-90"
                     >
-                      🏆 View certificate
+                      View certificate
                     </a>
                   )}
                 </li>
@@ -284,7 +283,7 @@ function Index() {
             </ul>
 
             <h3 className="mt-6 text-xs font-semibold uppercase tracking-[0.15em] text-brand">
-              ⭐ Key skills
+              Key skills
             </h3>
 
             <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-ink">
@@ -303,7 +302,7 @@ function Index() {
                 className="btn-pink"
                 download
               >
-                📄 Download CV (PDF)
+                Download CV (PDF)
               </a>
             </div>
           )}
@@ -317,7 +316,7 @@ function Index() {
             Background
           </p>
           <h2 className="reveal mt-2 text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
-            🎓 Education
+            Education
           </h2>
 
           <ol className="mt-6 space-y-5 border-l border-brand/15 pl-5">
@@ -340,7 +339,7 @@ function Index() {
             Certificates
           </p>
           <h2 className="reveal mt-2 text-[1.75rem] font-semibold text-brand" style={{ ...serif, lineHeight: 1.1 }}>
-            🏆 Qualifications
+            Qualifications
           </h2>
 
           <div className="mt-6 grid grid-cols-1 gap-3 md:grid-cols-2">
@@ -359,7 +358,7 @@ function Index() {
                       rel="noopener noreferrer"
                       className="btn-pink text-xs"
                     >
-                      🏆 View certificate
+                      View certificate
                     </a>
                   )}
                 </div>
@@ -375,7 +374,7 @@ function Index() {
         <div aria-hidden="true" className="hero-glow" />
         <div className="relative mx-auto max-w-3xl px-6 py-16">
           <h2 className="reveal text-[1.85rem] font-semibold text-cream" style={{ ...serif, lineHeight: 1.1 }}>
-            💬 Let&apos;s talk
+            Let&apos;s talk
           </h2>
           <p className="reveal mt-2 text-cream/75">
             Based in {profile.location}. Reach me directly and I&apos;ll reply fast.
@@ -387,7 +386,7 @@ function Index() {
               className="reveal lift flex items-center justify-between gap-3 rounded-[10px] bg-brand-2 px-4 py-3 ring-1 ring-cream/15"
             >
               <span>
-                <span className="block text-xs uppercase tracking-[0.15em] text-cream/60">📞 Phone</span>
+                <span className="block text-xs uppercase tracking-[0.15em] text-cream/60">Phone</span>
                 <span className="block text-base text-cream">{profile.phoneDisplay}</span>
               </span>
               <span className="text-xs text-cream/50">tap to call</span>
@@ -398,7 +397,7 @@ function Index() {
             >
               <span>
                 <span className="block text-xs uppercase tracking-[0.15em] text-cream/60">
-                  ✉️ Personal email
+                  Personal email
                 </span>
                 <span className="block text-base text-cream break-all">{profile.personalEmail}</span>
               </span>
@@ -409,7 +408,7 @@ function Index() {
               className="reveal lift flex items-center justify-between gap-3 rounded-[10px] bg-brand-2 px-4 py-3 ring-1 ring-cream/15"
             >
               <span>
-                <span className="block text-xs uppercase tracking-[0.15em] text-cream/60">✉️ Work email</span>
+                <span className="block text-xs uppercase tracking-[0.15em] text-cream/60">Work email</span>
                 <span className="block text-base text-cream break-all">{profile.workEmail}</span>
               </span>
               <span className="text-xs text-cream/50">tap to email</span>
@@ -423,7 +422,7 @@ function Index() {
               <span>
                 <span className="block text-xs uppercase tracking-[0.15em] text-white/80">LinkedIn</span>
                 <span className="block text-base font-semibold text-white">
-                  💼 View my LinkedIn profile
+                  View my LinkedIn profile
                 </span>
               </span>
               <span className="text-xs text-white/70">opens LinkedIn</span>
@@ -437,7 +436,7 @@ function Index() {
               <span>
                 <span className="block text-xs uppercase tracking-[0.15em] text-white/80">GitHub</span>
                 <span className="block text-base font-semibold text-white">
-                  💻 View my GitHub profile
+                  View my GitHub profile
                 </span>
               </span>
               <span className="text-xs text-white/70">opens new tab</span>
@@ -525,7 +524,7 @@ function ContactForm() {
         required
       />
       <button type="submit" className="btn-pink" disabled={!valid}>
-        ✉️ Send message
+        Send message
       </button>
       {sent && (
         <p className="text-sm text-cream/75">

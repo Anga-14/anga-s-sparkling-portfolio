@@ -524,7 +524,7 @@ function ContactForm() {
         required
       />
       <button type="submit" className="btn-pink" disabled={!valid}>
-        ✉️ Send message
+        Send message
       </button>
       {sent && (
         <p className="text-sm text-cream/75">
